@@ -2,11 +2,14 @@ package school.hei.patrimoine.cas;
 
 import static java.awt.EventQueue.invokeLater;
 import static java.util.Comparator.comparing;
+import static school.hei.patrimoine.modele.Argent.ariary;
 
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import school.hei.patrimoine.cas.example.BakoCas;
 import school.hei.patrimoine.modele.Patrimoine;
 import school.hei.patrimoine.modele.objectif.ObjectifNonAtteint;
 import school.hei.patrimoine.visualisation.swing.ihm.MainIHM;
@@ -14,7 +17,10 @@ import school.hei.patrimoine.visualisation.swing.ihm.MainIHM;
 public class CasSetAnalyzer implements Consumer<CasSet> {
 
   public static void main(String[] args) {
-    new CasSetAnalyzer().accept(new CasSetSupplier().get());
+    new CasSetAnalyzer().accept(new CasSet(
+      Set.of(new BakoCas()),
+      ariary(16000000  + 915000)
+    ));
   }
 
   @Override

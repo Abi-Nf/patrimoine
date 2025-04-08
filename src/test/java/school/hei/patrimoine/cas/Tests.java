@@ -1,6 +1,7 @@
 package school.hei.patrimoine.cas;
 
 import org.junit.jupiter.api.Test;
+import school.hei.patrimoine.cas.example.BakoCas;
 
 import java.time.LocalDate;
 import java.time.Month;

@@ -1,5 +1,6 @@
-package school.hei.patrimoine.cas;
+package school.hei.patrimoine.cas.example;
 
+import school.hei.patrimoine.cas.Cas;
 import school.hei.patrimoine.modele.Argent;
 import school.hei.patrimoine.modele.Devise;
 import school.hei.patrimoine.modele.Personne;
